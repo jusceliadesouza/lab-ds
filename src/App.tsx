@@ -6,7 +6,7 @@ import { Text } from './components/Text'
 import { TextInput } from './components/TextInput'
 import './styles/global.css'
 
-import Logo from '../public/react.svg'
+import Logo from '/react.svg'
 
 export function App() {
 
@@ -36,7 +36,7 @@ export function App() {
             <TextInput.Icon>
               <Envelope />
             </TextInput.Icon>
-            <TextInput.Input placeholder="Type your e-mail address" />
+            <TextInput.Input placeholder="Type your e-mail address" type='email' />
           </TextInput.Root>
         </div>
 
@@ -51,7 +51,7 @@ export function App() {
           </TextInput.Root>
         </div>
 
-        <div className="flex items-center gap-2 mb-9">
+        <div className="flex items-center gap-2 mb-9 font-semibold">
           <Checkbox />
           <Text>
             Lembrar de mim por 30 dias
