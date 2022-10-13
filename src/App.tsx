@@ -2,46 +2,42 @@ import { Envelope, Lock } from 'phosphor-react'
 import { Button } from './components/Button'
 import { Checkbox } from './components/Checkbox'
 import { Heading } from './components/Heading'
+import { Logo } from './Logo'
 import { Text } from './components/Text'
 import { TextInput } from './components/TextInput'
 import './styles/global.css'
 
-import Logo from '/react.svg'
 
 export function App() {
 
   return (
-    <div className='flex flex-col items-center m-auto justify-center max-w-[400px] min-h-screen gap-10'>
-      <div className='flex flex-col items-center'>
-        <img src={Logo} alt="react-logo" className='h-[120px]' />
+    <div className='w-screen h-screen flex flex-col items-center m-auto justify-center gap-10'>
+      <header className='flex flex-col items-center'>
+        <Logo />
 
-        <Heading
-          children="Ignite Lab"
-          size='lg'
-        />
+        <Heading size='lg'>Ignite Lab</Heading>
 
         <Text
-          children="Faça login e comece a usar"
           size='md'
-          color='gray-400'
-        />
+          className='text-gray-400'
+        >Faça login e comece a usar</Text>
 
-      </div>
+      </header>
 
-      <div className='w-full flex flex-col gap-4'>
-        <div className='flex flex-col gap-3'>
-          <Text children="Endereço de e-mail" size='md' />
-
+      <form className='flex flex-col items-stretch w-full max-w-sm mt-10 gap-4'>
+        <label htmlFor="email" className='flex flex-col gap-3'>
+          <Text size='md'>Endereço de e-mail</Text>
           <TextInput.Root>
             <TextInput.Icon>
               <Envelope />
             </TextInput.Icon>
-            <TextInput.Input placeholder="Type your e-mail address" type='email' />
+            <TextInput.Input placeholder="Type your e-mail address" id='email' type='email' />
           </TextInput.Root>
-        </div>
+        </label>
 
-        <div className='w-full flex flex-col gap-3'>
-          <Text children="Sua senha" size='md' />
+
+        <label htmlFor="password" className='flex flex-col gap-3'>
+          <Text size='md'>Sua senha</Text>
 
           <TextInput.Root>
             <TextInput.Icon>
@@ -49,32 +45,32 @@ export function App() {
             </TextInput.Icon>
             <TextInput.Input placeholder="**********" type="password" />
           </TextInput.Root>
-        </div>
+        </label>
 
-        <div className="flex items-center gap-2 mb-9 font-semibold">
-          <Checkbox />
-          <Text>
+        <label htmlFor="remember" className="flex items-center gap-2 font-semibold">
+          <Checkbox id='remember' />
+          <Text size='sm' className='text-gray-200'>
             Lembrar de mim por 30 dias
           </Text>
-        </div>
+        </label>
 
-        <Button children='Entre na plataforma' />
-      </div>
+        <Button
+          type='submit'
+          className='mt-4'
+        >
+          Entrar na plataforma
+        </Button>
+      </form>
 
-      <div className='flex flex-col gap-4 items-center'>
-        <Text
-          children="Esqueceu sua senha?"
-          size='sm'
-          color='gray-400'
-        />
+      <footer className='flex flex-col gap-4 items-center mt-8'>
+        <Text asChild size='sm'>
+          <a href='' className='text-gray-400 underline hover:text-gray-200'>Esqueceu sua senha?</a>
+        </Text>
 
-        <Text
-          children="Não possui conta? Crie uma conta!"
-          size='sm'
-          color='gray-400'
-        />
-      </div>
-
+        <Text asChild size='sm'>
+          <a href='' className='text-gray-400 underline hover:text-gray-200'>Não possui conta? Crie uma agora!</a>
+        </Text>
+      </footer>
     </div>
   )
 }

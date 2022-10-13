@@ -6,10 +6,10 @@ export interface TextProps {
   size?: 'sm' | 'md' | 'lg'
   children: ReactNode
   asChild?: boolean
-  color?: 'gray-100' | 'gray-400'
+  className?: string
 }
 
-export function Text({ size = 'md', children, asChild, color = 'gray-100' }: TextProps) {
+export function Text({ size = 'md', children, asChild, className }: TextProps) {
   const Comp = asChild ? Slot : 'span'
 
   return (
@@ -20,10 +20,7 @@ export function Text({ size = 'md', children, asChild, color = 'gray-100' }: Tex
         'text-sm': size == 'md',
         'text-md': size == 'lg',
       },
-      {
-        'text-gray-100': color == 'gray-100',
-        'text-gray-400': color == 'gray-400'
-      }
+      className,
     )}
     >
       {children}

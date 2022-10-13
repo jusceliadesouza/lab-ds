@@ -1,6 +1,4 @@
-# Ignite Lab - Design System
-
-
+# Design System
 
 <div>
   <p align="center" style="display: flex; justify-content: space-evenly;">
@@ -15,6 +13,12 @@
 </div>
 
 ## Projeto
+
+<p align="justify">
+  O Design System consiste em um sistema cujo propósito é proporcionar a consistência e padronização dos produtos, funcionando como suporte ao desenvolvimento de interfaces através de regras, princípios, elementos e componentes, facilitando o trabalho de designers e programadores, sendo capaz de criar uma identidade visual que possa ser reconhecida por seus usuários com facilidade.
+
+  Além disso, o Design System é uma ferramenta que evolui à medida que os projetos de UX Design são desenvolvidos e amadurecidos dentro de uma organização.
+</p>
 
 ### Layout
 
