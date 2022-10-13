@@ -14,15 +14,19 @@
 
 ## Projeto
 
-<p align="justify">
-  O Design System consiste em um sistema cujo propósito é proporcionar a consistência e padronização dos produtos, funcionando como suporte ao desenvolvimento de interfaces através de regras, princípios, elementos e componentes, facilitando o trabalho de designers e programadores, sendo capaz de criar uma identidade visual que possa ser reconhecida por seus usuários com facilidade.
+### O que é Design System?
 
-  Além disso, o Design System é uma ferramenta que evolui à medida que os projetos de UX Design são desenvolvidos e amadurecidos dentro de uma organização.
+<p align="justify">
+  O Design System consiste em um sistema cujo propósito é proporcionar a consistência e padronização dos produtos, funcionando como suporte ao desenvolvimento de interfaces através de regras, princípios, elementos e componentes, facilitando o trabalho de designers e programadores, sendo capaz de criar uma identidade visual que possa ser reconhecida por seus usuários com facilidade. Além disso, é uma ferramenta que evolui à medida que os projetos de UX Design são desenvolvidos e amadurecidos dentro de uma organização.
 </p>
 
 ### Layout
 
-Você pode acessar o arquivo completo do projeto [aqui]().
+Você pode acessar o layout do projeto desenvolvido durante o evento [aqui](https://www.figma.com/file/XKNa7aiV0wPWI2AT05L9Wj/Ignite-Lab-Design-System?node-id=0%3A1).
+
+### Deploy
+
+Você pode ver o sistema rodando [Vercel](https://lab-ds.vercel.app/)
 
 ## Tecnologias
 
